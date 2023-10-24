@@ -1,0 +1,65 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box; 
+  	font-family: 'Poppins', sans-serif;
+  	font-weight: 300;
+    text-align: center;
+}
+
+body{ position: relative; }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    min-width: 345px;
+    transition: opacity 0.5s ease; /* Adjust the duration and easing as needed */
+}
+header {
+    top: 0;
+    background-color: darkblue;
+    color: white;
+    position: sticky;
+    z-index: 9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background-color: darkred;
+    color: white;
+}
+
+button {
+    padding: 10px 20px; /* Add padding for better appearance */
+    background-color: #01407D; /* Set button background color */
+    border: none; /* Remove default border */
+    color: white; /* Set text color */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease; /* Slower transitions */
+}  
+
+/* Style when hovering over the <button> tag */
+button:hover {
+    background-color: #dc4653; /* Change button background color on hover */
+    transform: translateY(-3px); /* Apply a slightly larger vertical shift */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increase the shadow effect */
+}
+
+section {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 5%;
+    display: block;
+}
+
+.App-logo {
+    width: 20%;
+    pointer-events: none;
+}
