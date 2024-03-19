@@ -22,11 +22,20 @@ header{
     justify-content: center;
     height: 80px;
 }
-main{
+section{
     padding: 20px;
-    height: 100vh;
+    width: 100vw;
+    min-height: 400px;
+    font-size: 1.5rem;
 }
 
 footer{
     height: 120px;
+}
+
+#sect1 {
+    background-image: url("img/img597.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
