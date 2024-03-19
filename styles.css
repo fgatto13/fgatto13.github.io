@@ -111,7 +111,6 @@ footer{
     white-space: nowrap; /* Prevent text from wrapping */
     scroll-snap-type: x mandatory;
     .box{ 
-        width: 200px;
         scroll-snap-align: center;
         display: inline-block; 
         margin: 10%;
