@@ -115,6 +115,8 @@ footer{
         display: inline-block; 
         margin: 10%;
     }
+    .box:nth-child(1){ margin-left: 25%;}
+    .box:nth-child(5){ margin-right: 25%;}
 }
 
 @media only screen and (max-width: 768px) {
