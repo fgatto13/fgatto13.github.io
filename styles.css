@@ -22,6 +22,7 @@ header{
     justify-content: center;
     height: 80px;
 }
+
 section{
     padding: 20px;
     width: 100vw;
@@ -33,9 +34,11 @@ footer{
     height: 120px;
 }
 
-#sect1 {
-    background-image: url("img/img597.JPG");
+#sect1, #sect2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#sect1{ background-image: url("img/img597.JPG"); }
+#sect2{ background-image: url("img/img604.JPG"); }
