@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 body{
     background-color: white;
     width: 100vw;
@@ -21,6 +25,8 @@ header{
     align-items: center;
     justify-content: center;
     height: 80px;
+    position: sticky;
+    z-index: 9;
 }
 
 section{
@@ -28,6 +34,7 @@ section{
     width: 100vw;
     min-height: 500px;
     font-size: 1.5rem;
+    scroll-snap-align: center;
 }
 
 footer{
