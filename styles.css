@@ -20,13 +20,18 @@ header, footer{
     background: black;
 }
 
+header, section, footer{
+    scroll-snap-align: start;
+}
+
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
-    position: sticky;
-    z-index: 9;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 section{
@@ -34,10 +39,10 @@ section{
     width: 100vw;
     min-height: 500px;
     font-size: 1.5rem;
-    scroll-snap-align: center;
 }
 
 footer{
+    position: relative;
     height: 200px;
 }
 
@@ -75,9 +80,18 @@ footer{
     background-color: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .propic{
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+    }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
     section{
         height: 100vh;
     }
