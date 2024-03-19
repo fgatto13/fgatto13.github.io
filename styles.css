@@ -80,7 +80,7 @@ footer{
     transform: translateX(0);
 }
 
-.box{
+.box, .slideBox{
     width: 400px;
     height: 500px;
     border-radius: 10px;
@@ -110,13 +110,13 @@ footer{
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent text from wrapping */
     scroll-snap-type: x mandatory;
-    .box{ 
+    .slideBox{ 
         scroll-snap-align: center;
         display: inline-block; 
         margin: 10%;
     }
-    .box:nth-child(1){ margin-left: 25%;}
-    .box:nth-child(5){ margin-right: 25%;}
+    .slideBox:nth-child(1){ margin-left: 25%;}
+    .slideBox:nth-child(5){ margin-right: 25%;}
 }
 
 @media only screen and (max-width: 768px) {
