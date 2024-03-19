@@ -2,39 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: white;
     width: 100vw;
     height: 100vh;
+}
+
+header, footer{
+    color: white;
+    background: black;
 }
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60px;
-    background-color: bisque;
-    z-index: 9;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80px;
 }
-
 main{
-    position: absolute;
-    top: 60px;
-    width: 100vw;
-    height: 100vh;
-    text-align: left;
     padding: 20px;
+    height: 100vh;
 }
 
 footer{
-    position: relative;
-    width: 100vw;
-    height: 80px;
-    background-color: burlywood;
+    height: 120px;
 }
