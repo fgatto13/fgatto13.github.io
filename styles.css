@@ -108,6 +108,15 @@ footer{
     text-align: left;
 }
 
+.aBtn{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: black;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     section{
         height: 100vh;
