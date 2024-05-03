@@ -20,8 +20,8 @@ header, footer{
     background: black;
 }
 
-header img{ 
-    height: 100%;
+.propic { 
+    height: 80px;
     border-radius: 50%;
     text-align: left;
 }
