@@ -20,6 +20,12 @@ header, footer{
     background: black;
 }
 
+header img{ 
+    height: 100%;
+    border-radius: 50%;
+    text-align: left;
+}
+
 header, section, footer{
     scroll-snap-align: start;
 }
