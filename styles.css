@@ -95,6 +95,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
     .propic{
         width: 50%;
         height: auto;
