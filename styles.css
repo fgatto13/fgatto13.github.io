@@ -7,6 +7,8 @@
 
 html, body{
     background-color: white;
+    color: #0A1C0F;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
 }
@@ -15,9 +17,12 @@ html::-webkit-scrollbar,
     display: none;
 }
 
-header, footer{
+footer{
     color: white;
-    background: black;
+    background: #0A1C0F;
+}
+a{
+    color: #fff;
 }
 
 .propic { 
@@ -25,55 +30,8 @@ header, footer{
     border-radius: 50%;
     text-align: left;
 }
-
-header, section, footer{
+section, footer{
     scroll-snap-align: start;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    height: 80px;
-    top: 0;
-    left: 0;
-}
-#fastMenu{
-    background-color: #fff;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 999;
-    cursor: pointer;
-    box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.308);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    *{
-        display: none;
-    }
-    img{
-        width: 40px;
-        height: auto;
-    }
-}
-#fastMenu.open {
-    backdrop-filter: blur(10px);
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    border-radius: 10px;   
-    *{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 section{
@@ -83,7 +41,7 @@ section{
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 footer{
@@ -100,11 +58,11 @@ footer{
     background-repeat: no-repeat;
 }
 
-#sect1{ background-image: url("img/img597_1.png"); }
+#sect1{ background-image: url("img/bg1.png"); }
 #sect2{ 
     display: flex;
     flex-direction: column;
-    background-image: url("img/img604.JPG"); 
+    background-image: url("img/bg2.png"); 
 }
 .aboutMe{
     display: flex;
@@ -136,11 +94,17 @@ footer{
     scroll-snap-align: center;
 }
 
-.hidden {
+.hidden,
+.hiddenRight {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
     transition: all 1s;
+}
+.hidden{
+    transform: translateX(-100%);
+}
+.hiddenRight{
+    transform: translateX(100%);
 }
 
 .show{
@@ -155,6 +119,7 @@ footer{
     box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    color: #0A1C0F;
 }
 
 .box{
@@ -199,7 +164,12 @@ footer{
     padding: 10px;
     display: inline;
 }
-
+.interests{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
 @media only screen and (max-width: 768px) {
     section{
         height: 100vh;
@@ -222,5 +192,8 @@ footer{
     }
     .aboutMe{
         font-size: 1.1rem;
+    }
+    section{
+        min-height: 100vh;
     }
 }
