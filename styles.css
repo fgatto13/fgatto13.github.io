@@ -93,8 +93,16 @@ footer{
     width: 100vw;
     padding: 20px;
 }
+#left{
+    margin-left: 50%;
+}
+#right{
+    margin-right: 50%;
+}
+.slider-content{
+    margin-inline: 10%;
+}
 .slider > * {
-    margin-inline: 50%;
     scroll-snap-align: center;
 }
 
@@ -113,7 +121,9 @@ footer{
 
 .box{
     min-width: 300px;
+    max-width: 500px;
     min-height: 400px;
+    max-height: 600px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
