@@ -84,24 +84,29 @@ footer{
     box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
     padding: 10px;
 }
-.slider{
+.slider {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
+    scroll-snap-type: x mandatory;
     width: 100vw;
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;}
+
+.slider-content {
+    flex: 0 0 auto; /* Prevents flex items from shrinking or growing */
+    margin: 0 2.5vw; /* Adjust this value as needed for spacing between items */
 }
-#left{
-    margin-left: 50%;
+
+#left {
+    margin-left: 50vw; /* Ensure the first item is centered */
 }
-#right{
-    margin-right: 50%;
+
+#right {
+    margin-right: 50vw; /* Ensure the last item is centered */
 }
-.slider-content{
-    margin-inline: 10%;
-}
+
 .slider > * {
     scroll-snap-align: center;
 }
@@ -120,10 +125,8 @@ footer{
 }
 
 .box{
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 400px;
-    max-height: 600px;
+    width: 300px;
+    height: 400px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
