@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="fastMenu" onclick="langToggle()">
+        <ul>
+            <li><a href="">curriculum</a></li>
+        </ul>
+        <h3>Language</h3>
+        <div class="langSel">
+            <img src="img/italy.png" alt="">
+            <img src="img/united-states.png" alt="">
+        </div>
+    </div>
     <header>
         <h1>Welcome!</h1>
     </header>
@@ -31,28 +41,28 @@
             <h2 class="linksH2 hidden">Useful links and projects</h2>
             <div class="slider-container">
                 <div class="slider hidden">
-                    <div class="box slider-content" id="left">
+                    <div class="box boxFiltered slider-content" id="left">
                         <i style="font-size:100px" class="fa">&#xf092;</i>
                         <h3>GitHub homepage</h3>
                         <p style="font-size: 18px; margin: 5px; padding: 5px;">This is the link to my personal GitHub page. Here you can find most of the projects that I've been working on in the past couple of years, mainly for university purposes. <br>
                         If interested, you can access it <a href="" >here</a>!</p>
                     </div>
-                    <div class="box slider-content">
+                    <div class="box boxFiltered slider-content">
                         <i style="font-size:100px" class="fa">&#xf092;</i>
                         <h3>GitHub homepage</h3>
                         <p style="font-size: 18px; margin: 5px; padding: 5px;">This is the link to my personal GitHub page. Here you can find most of the projects that I've been working on in the past couple of years, mainly for university purposes.</p>
                     </div>
-                    <div class="box slider-content">
+                    <div class="box boxFiltered slider-content">
                         <i style="font-size:100px" class="fa">&#xf092;</i>
                         <h3>GitHub homepage</h3>
                         <p style="font-size: 18px; margin: 5px; padding: 5px;">This is the link to my personal GitHub page. Here you can find most of the projects that I've been working on in the past couple of years, mainly for university purposes.</p>
                     </div>
-                    <div class="box slider-content">
+                    <div class="box boxFiltered slider-content">
                         <i style="font-size:100px" class="fa">&#xf092;</i>
                         <h3>GitHub homepage</h3>
                         <p style="font-size: 18px; margin: 5px; padding: 5px;">This is the link to my personal GitHub page. Here you can find most of the projects that I've been working on in the past couple of years, mainly for university purposes.</p>
                     </div>
-                    <div class="box slider-content" id="right">
+                    <div class="box boxFiltered slider-content" id="right">
                         <i style="font-size:100px" class="fa">&#xf092;</i>
                         <h3>GitHub homepage</h3>
                         <p style="font-size: 18px; margin: 5px; padding: 5px;">This is the link to my personal GitHub page. Here you can find most of the projects that I've been working on in the past couple of years, mainly for university purposes.</p>
@@ -75,4 +85,5 @@
     </footer>
 </body>
 <script defer src="script.js"></script>
+<script defer src="scripts/toggleOpener.js"></script>
 </html>
