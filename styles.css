@@ -6,7 +6,6 @@
 }
 
 html, body{
-    scroll-snap-type: y mandatory;
     background-color: white;
     width: 100vw;
     height: 100vh;
@@ -77,11 +76,7 @@ footer{
 }
 .linksH2{
     text-align: center;
-    border-radius: 25px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
+    color: #fff;
     padding: 10px;
 }
 .slider {
@@ -97,14 +92,6 @@ footer{
 .slider-content {
     flex: 0 0 auto; /* Prevents flex items from shrinking or growing */
     margin: 0 2.5vw; /* Adjust this value as needed for spacing between items */
-}
-
-#left {
-    margin-left: 50vw; /* Ensure the first item is centered */
-}
-
-#right {
-    margin-right: 50vw; /* Ensure the last item is centered */
 }
 
 .slider > * {
@@ -147,7 +134,7 @@ footer{
 .contacts{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     width: 100vw;
     padding: 10px;
 }
@@ -163,7 +150,9 @@ footer{
     background-color: black;
     cursor: pointer;
 }
-
+.links i{
+    margin-inline: 20px
+}
 .description {
     text-align: center;
     padding: 10px;
@@ -176,5 +165,18 @@ footer{
     }
     .slider-container{
         margin: 10%;
+    }
+    .contacts{
+        text-align: left;
+    }
+    #left {
+        margin-left: 50vw; /* Ensure the first item is centered */
+    }
+    
+    #right {
+        margin-right: 50vw; /* Ensure the last item is centered */
+    }
+    html, body{
+        scroll-snap-type: y mandatory;
     }
 }
