@@ -55,7 +55,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #sect1, #sect2 {
@@ -75,6 +75,15 @@ footer{
     flex-direction: column;
     font-size: 1rem;
 }
+.linksH2{
+    text-align: center;
+    border-radius: 25px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
+    padding: 10px;
+}
 .slider{
     display: grid;
     grid-auto-flow: column;
@@ -83,6 +92,7 @@ footer{
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
     width: 100vw;
+    padding: 20px;
 }
 .slider > * {
     margin-inline: 50%;
@@ -107,6 +117,7 @@ footer{
     height: 500px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.59);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     display: flex;
@@ -125,6 +136,11 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 100vw;
+    padding: 10px;
+}
+.contacts > *{
+    margin: 10px;
 }
 
 .aBtn{
