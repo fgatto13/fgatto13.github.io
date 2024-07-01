@@ -146,4 +146,7 @@ footer{
     section{
         height: 100vh;
     }
+    .slider-container{
+        margin: 10%;
+    }
 }
