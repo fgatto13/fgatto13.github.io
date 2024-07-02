@@ -11,7 +11,7 @@ html, body{
     color: #0A1C0F;
     overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 html::-webkit-scrollbar,
 .slider::-webkit-scrollbar{
