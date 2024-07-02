@@ -21,9 +21,15 @@ html::-webkit-scrollbar,
 footer{
     color: white;
     background: #0A1C0F;
+    a{
+        color: transparent;
+        i{
+            color: coral;
+        }
+    }
 }
 a{
-    color: #fff;
+    color: coral;
 }
 
 .propic { 
@@ -183,9 +189,6 @@ footer{
     }
     .slider-container{
         margin: 10%;
-    }
-    .contacts{
-        text-align: left;
     }
     .aboutMe{
         font-size: 1.1rem;
