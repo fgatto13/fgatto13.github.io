@@ -37,7 +37,7 @@ section, footer{
 section{
     padding: 20px;
     width: 100vw;
-    min-height: 500px;
+    height: 100vh;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -191,8 +191,5 @@ footer{
     }
     .aboutMe{
         font-size: 1.1rem;
-    }
-    section{
-        min-height: 100vh;
     }
 }
