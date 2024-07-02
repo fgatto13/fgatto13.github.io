@@ -6,6 +6,7 @@
 }
 
 html, body{
+    scroll-snap-type: y mandatory;
     background-color: white;
     color: #0A1C0F;
     overflow-x: hidden;
@@ -185,9 +186,6 @@ footer{
     }
     .contacts{
         text-align: left;
-    }
-    html, body{
-        scroll-snap-type: y mandatory;
     }
     .aboutMe{
         font-size: 1.1rem;
