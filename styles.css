@@ -43,7 +43,7 @@ section, footer{
 section{
     padding: 20px;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -135,13 +135,13 @@ footer{
 }
 
 .box{
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-evenly;
+    text-align: left;
     .propic{
         width: 50%;
         height: auto;
@@ -177,7 +177,7 @@ footer{
     display: inline;
 }
 .descriptionElements{
-    text-align: center;
+    text-align: left;
     max-width: 50%;
 }
 .interests{
@@ -188,13 +188,13 @@ footer{
 }
 @media only screen and (max-width: 768px) {
     section{
-        height: 100vh;
+        height: 100dvh;
     }
     .slider-container{
         margin: 10%;
     }
     .aboutMe{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .descriptionElements{
         max-width: 100%;
