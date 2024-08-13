@@ -99,13 +99,6 @@ footer{
 .slider > * {
     scroll-snap-align: center;
 }
-#left {
-    margin-left: 50vw; /* Ensure the first item is centered */
-}
-
-#right {
-    margin-right: 50vw; /* Ensure the last item is centered */
-}
 .hidden,
 .hiddenRight {
     opacity: 0;
